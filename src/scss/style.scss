@@ -1,5 +1,5 @@
 @use "mixins" as m;
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@300&display=swap');
 @import url(/src/scss/cart.scss);
 @import url(/src/scss/hamburger.scss);
@@ -9,20 +9,20 @@
 @import "../scss/variables";
 @import url(/src/scss/checkoutPage.scss);
 @import url(/src/scss/orderConfirmation.scss);
-
+ 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   margin: 0;
   overflow-x: hidden;
 }
-
+ 
 //Navigation Bar
-
+ 
 .navOnecontainer {
   display: flex;
   flex-direction: row;
@@ -30,31 +30,31 @@ body {
   align-items: center;
   background-color: $primary-header-bgcolor;
 }
-
+ 
 .logo {
   width: 180px;
   margin-left: 20px;
 }
-
+ 
 .wishlistIcon {
   width: 30px;
 }
-
+ 
 .cartIcon {
   width: 30px;
 }
-
+ 
 .hamburgerIcon {
   width: 70px;
 }
-
+ 
 .searchIcon {
   width: 35px;
   border-style: none;
   background-color: $search-bgcolor;
   border-radius: 20px;
 }
-
+ 
 .searchDiv {
   display: flex;
   flex-direction: row;
@@ -62,7 +62,7 @@ body {
   border-radius: 20px;
   background-color: $search-bgcolor;
 }
-
+ 
 .inputSearchbar {
   //The actual searchbar input
   width: 300px;
@@ -71,11 +71,11 @@ body {
   outline: none;
   border-radius: 20px;
 }
-
+ 
 //-----------------
-
+ 
 //Main
-
+ 
 .heroContainer {
   margin-top: 15px;
   display: flex;
@@ -83,22 +83,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+ 
 .heroImage {
   width: 560px;
   margin-top: 15px;
   max-width: 100%;
   border-radius: 20%;
 }
-
-
+ 
+ 
 .heroHeader {
   margin-top: 10px;
   font-family: 'Cabin', sans-serif;
   text-transform: uppercase;
   color: $header-color;
 }
-
+ 
 .heroParagraph {
   margin-top: 10px;
   font-family: 'Cabin', sans-serif;
@@ -107,7 +107,7 @@ body {
   text-align: center;
   max-width: 80%;
 }
-
+ 
 .heroButton {
   color: $primary-button-font-color;
   font-size: 15px;
@@ -119,13 +119,13 @@ body {
   background-color: $primary-button-color;
   border-style: none;
   margin-bottom: 20px;
-
+ 
   &:hover {
     background-color: $primary-button-hover;
   }
 }
-
-
+ 
+ 
 //Month Container
 .monthContainer {
   margin-top: 15px;
@@ -134,14 +134,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+ 
 .monthImage {
   width: 560px;
   margin-top: 15px;
   max-width: 100%;
   // border-radius: 3%;
 }
-
+ 
 .monthHeader {
   margin-top: 20px;
   font-family: 'Cabin', sans-serif;
@@ -149,7 +149,7 @@ body {
   text-align: center;
   color: $header-color;
 }
-
+ 
 .monthParagraph {
   margin-top: 10px;
   font-family: 'Cabin', sans-serif;
@@ -158,7 +158,7 @@ body {
   text-align: center;
   max-width: 80%;
 }
-
+ 
 .monthButton {
   color: $primary-button-font-color;
   font-size: 15px;
@@ -170,12 +170,12 @@ body {
   background-color: $primary-button-color;
   border-style: none;
   margin-bottom: 20px;
-
+ 
   &:hover {
     background-color: $primary-button-hover;
   }
 }
-
+ 
 //Month Deal
 .monthDeal {
   margin-top: 15px;
@@ -184,7 +184,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+ 
 .monthDealHeader {
   margin-top: 25px;
   font-family: 'Cabin', sans-serif;
@@ -194,7 +194,7 @@ body {
     text-align: center;
   }
 }
-
+ 
 .monthdealImage {
   width: 560px;
   margin-top: 15px;
@@ -202,42 +202,42 @@ body {
   // border: 1px solid black;
   border-radius: 2%;
   margin-bottom: 20px;
-
+ 
   &:hover {
     cursor: pointer;
   }
 }
-
+ 
 .bestSellerHeader {
   font-family: 'Cabin', sans-serif;
   text-align: left;
   margin-top: 25px;
   margin-left: 15px;
-
+ 
   @include m.desktop {
     text-align: center;
   }
 }
-
+ 
 #productsLandingPage {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+ 
   #showPlant {
     width: 100vw;
-
+ 
     @include m.tablet {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-
+ 
     }
   }
-
+ 
 }
-
+ 
 .plant {
   border: $black-bg;
   margin: 20px;
@@ -245,29 +245,29 @@ body {
   text-align: center;
   border-radius: 50px;
   box-shadow: $card-container-shadow;
-
+ 
   &:hover {
     transition: 1.5s;
     cursor: pointer;
     box-shadow: $expert-button-hover-shadow;
   }
-
+ 
   @include m.tablet {
     width: 40vw;
   }
-
+ 
   @include m.desktop {
     width: 20vw;
   }
 }
-
+ 
 img {
   max-width: 70%;
   /* Ensure images don't exceed their container */
 }
-
+ 
 //Search field
-
+ 
 .navTwocontainer {
   display: flex;
   flex-direction: row;
@@ -275,14 +275,14 @@ img {
   padding: 20px;
   border-bottom: 1px solid black;
   background-color: $primary-header-bgcolor;
-
+ 
   .searchIcon {
     width: 35px;
     border-style: none;
     background-color: $search-bgcolor;
     border-radius: 20px;
   }
-
+ 
   .searchDiv {
     position: relative;
     display: flex;
@@ -290,7 +290,7 @@ img {
     border: $grey-border-color;
     border-radius: 20px;
     background-color: $search-bgcolor;
-
+ 
     .inputSearchbar {
       width: 300px;
       padding: 10px;
@@ -299,7 +299,7 @@ img {
       border-radius: 20px;
       z-index: 2;
     }
-
+ 
     .searchSuggestions {
       position: absolute;
       top: 100%;
@@ -313,7 +313,7 @@ img {
       display: none;
       z-index: 1;
       border-radius: 15px;
-
+ 
       li {
         padding: 8px;
         cursor: pointer;
@@ -321,18 +321,18 @@ img {
         justify-content: center;
         align-items: center;
         font-family: 'Cabin', sans-serif;
-
+ 
         &:hover {
           background-color: $search-hover-color;
           border-radius: 15px;
         }
-
+ 
         &.suggestion-item {
           border-bottom: $white-border-color;
         }
       }
     }
-
+ 
     .suggestion-content-container {
       display: flex;
       align-items: center;
@@ -340,30 +340,30 @@ img {
       gap: 2em;
       margin-right: 5em;
     }
-
+ 
     .suggestion-image {
       width: 5em;
     }
-
+ 
     .suggestion-text {
       font-family: 'Cabin', sans-serif;
       font-size: 1.3em;
       margin-top: 1rem;
     }
-
+ 
     .inputSearchbar:focus+.searchSuggestions {
       display: block;
     }
-
+ 
   }
 }
-
+ 
 // //Footer Section
 // .footerInitializer {
 //   padding-top: 30px;
 // }
-
-
+ 
+ 
 .waveOne {
   width: 100%;
   height: 61vw;
@@ -371,20 +371,21 @@ img {
   margin-bottom: 0;
   display: block;
 }
-
+ 
 .theFooter {
   background-color: $footer-primary-bgcolor;
   margin-top: 0;
 }
-
+ 
 .footerTermContainer {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
   margin: 0 auto;
 }
-
+ 
 .footerParagraph {
   margin-top: 25px;
   padding: 0px;
@@ -399,7 +400,7 @@ img {
     margin-top: 4.5rem;
     max-width: 60%;
 }
-
+ 
 .klarnaLogo {
   margin-top: 25px;
   max-width: 30%;
@@ -407,7 +408,7 @@ img {
   overflow: clip;
   margin-top: 2.5rem;
 }
-
+ 
 //Footer Social Media
 .socialContainer {
   display: flex;
@@ -420,63 +421,63 @@ img {
   border-bottom: $black-border;
   padding: 10px;
 }
-
+ 
 .instaLogo {
   width: 25px;
-
+ 
   &:hover {
     cursor: pointer;
     animation: socialAnimation 3s ease 0s 1 normal forwards;
   }
 }
-
+ 
 .xLogo {
   width: 38px;
-
+ 
   &:hover {
     animation: socialAnimation 3s ease 0s 1 normal forwards;
     cursor: pointer;
   }
 }
-
+ 
 .metaLogo {
   width: 23px;
-
+ 
   &:hover {
     animation: socialAnimation 3s ease 0s 1 normal forwards;
     cursor: pointer;
   }
 }
-
+ 
 @keyframes socialAnimation {
-
+ 
   0%,
   100% {
     transform: translateX(0%);
     transform-origin: 50% 50%;
   }
-
+ 
   15% {
     transform: translateX(-30px) rotate(-6deg);
   }
-
+ 
   30% {
     transform: translateX(15px) rotate(6deg);
   }
-
+ 
   45% {
     transform: translateX(-15px) rotate(-3.6deg);
   }
-
+ 
   60% {
     transform: translateX(9px) rotate(2.4deg);
   }
-
+ 
   75% {
     transform: translateX(-6px) rotate(-1.2deg);
   }
 }
-
+ 
 //Footer Membership Form
 .memberContainer {
   margin-top: 4.5rem;
@@ -485,7 +486,7 @@ img {
   flex-direction: column;
   max-width: 100%;
 }
-
+ 
 .memberHeader {
   font-family: "Larish Neue Semibold", Georgia, Times, serif;
     font-size: 24px;
@@ -497,7 +498,7 @@ img {
     text-align: center;
     max-width: 80%;
 }
-
+ 
 .memberParagraph {
   font-family: Spectral, "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 18px;
@@ -507,7 +508,7 @@ img {
     margin: 0px 0px 1.5rem;
     text-align: center;
 }
-
+ 
 .memberButton {
   position: relative;
     appearance: none;
@@ -535,7 +536,7 @@ img {
     transition: background-color 150ms linear 0s;
     border-radius: 100px;
     text-transform: none;
-
+ 
     &:hover {
       background-color: $footer-primary-bgcolor;
       border: $secondary-black-border;
@@ -543,7 +544,7 @@ img {
       transition: 0.8s;
     }
 }
-
+ 
 //Customer Service
 .footerTwo {
   display: flex;
@@ -551,7 +552,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-
+ 
 .waveSupport {
   width: 100%;
   height: 61vw;
@@ -559,7 +560,7 @@ img {
   margin-bottom: 0;
   display: block;
 }
-
+ 
 .secondFooter {
   display: flex;
   flex-direction: column;
@@ -570,14 +571,14 @@ img {
   width: 100%;
   padding-bottom: 10px;
 }
-
+ 
 .supportContainer {
   margin-top: 4.5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-
+ 
 .supportHeader {
   background-color: secondary-header-bgcolor;
   font-family: "Messina Sans Condensed", Impact, Charcoal, sans-serif;
@@ -589,7 +590,7 @@ img {
     color: $fourth-paragraph-color;
     margin: 0px 0px 0.5rem;
 }
-
+ 
 .supportParagraph {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -600,7 +601,7 @@ img {
     padding: 0px 1.5rem;
     color: $fourth-paragraph-color;
 }
-
+ 
 .supportButton {
   appearance: none;
   background: $footer-primary-bgcolor;
@@ -628,7 +629,7 @@ img {
   text-transform: none;
   border: $secondary-black-border;
   white-space: nowrap;
-
+ 
   &:hover {
     color: $fourth-paragraph-color;
     background-color: $black-bg;
@@ -636,39 +637,39 @@ img {
     transition: 0.8s;
   }
 }
-
+ 
 //Information Links
 .infoLinksContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4.5rem;
-  background-color: $secondary-white-color;
+  background-color: $secondary-header-bgcolor;
   gap: 15px;
+  padding-top: 1.5rem;
 }
-
+ 
 .infoahref {
   list-style: none;
   color: $link-color;
   text-decoration: none;
-
+ 
   &:hover {
     text-decoration: underline;
   }
 }
-
+ 
 .footerLogo {
   width: 180px;
   margin-left: 20px;
   margin-top: 4.5rem;
 }
-
+ 
 .footerCopyright {
   margin-bottom: 2.5rem;
   color: $fourth-paragraph-color;
 }
-
+ 
 @include m.tablet {
   .heroImage {
     width: 80%;
@@ -677,7 +678,7 @@ img {
   .heroHeader {
     font-size: 34px;
   }
-
+ 
   .heroParagraph {
     font-size: 1.3em;
   }
